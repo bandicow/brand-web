@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
 // import { useNavigate } from "react-router-dom";
 
 // import logo from "./img/35mm_logo_bg_remove.png";
-import mainImg from "../../public/image/35mm_logo_bg_remove.png";
+import mainImg from "../public/image/35mm_logo_bg_remove.png";
 
 import "../styles/App.css";
 import Store from "./sale/Store";
@@ -14,7 +14,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 let data: Item = {
-  name: "Momenta Momento",
+  name: "picapo",
   category: "tester",
   address: {
     city: "gwangju",
@@ -38,9 +38,7 @@ const MainPage: React.FC = () => {
 
   return (
     <div className="App-header">
-
-
-      <Image src={mainImg} className="Main-img" alt="logo"/>
+      <Image src={mainImg} className="Main-img" alt="logo" />
       <Store info={productInfo} changeAddress={changeAddress} />
       {/* <BestMenu
         name="35mm맨투맨"
@@ -49,8 +47,12 @@ const MainPage: React.FC = () => {
         showBestMenuName={showBestMenuName}
       /> */}
       <ul className="Link">
-      <Link href="/sale" className="Link-to">sale shop</Link>
-      <Link href="/gallery" className="Link-to">gallery</Link>
+        <Link href="/sale" className="Link-to">
+          sale shop
+        </Link>
+        <Link href="/gallery" className="Link-to">
+          gallery
+        </Link>
       </ul>
     </div>
   );

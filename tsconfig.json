@@ -20,9 +20,17 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./app/*"],
+      "@css/": ["./styles/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/layout/Layout.tsx", ".next/types/app/gallery/page.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/layout/Layout.tsx",
+    ".next/types/app/gallery/page.tsx"
+  ],
   "exclude": ["node_modules"]
 }

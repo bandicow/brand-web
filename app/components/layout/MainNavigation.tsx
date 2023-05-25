@@ -4,9 +4,9 @@ import Link from "next/link";
 function MainNavigation() {
   return (
     <header className={classes.header}>
-            <Link href="/">
-                <div className={classes.logo}>Momenta Momento</div>
-            </Link>
+      <Link href="/">
+        <div className={classes.logo}>Picapo</div>
+      </Link>
 
       <nav>
         <ul>
@@ -14,7 +14,7 @@ function MainNavigation() {
             <Link href="/">Main</Link>
           </li>
           <li>
-            <Link href="/gallery">account</Link>
+            <Link href="../login">account</Link>
           </li>
         </ul>
       </nav>
