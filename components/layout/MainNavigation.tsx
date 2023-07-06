@@ -16,6 +16,9 @@ function MainNavigation() {
           <li>
             <Link href="../login">account</Link>
           </li>
+          <li>
+            <Link href="../addItem">add 제품</Link>
+          </li>
         </ul>
       </nav>
     </header>

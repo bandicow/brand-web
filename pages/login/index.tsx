@@ -1,6 +1,6 @@
 "use client";
 import { useSession, signIn, signOut } from "next-auth/react";
-import UserCard from "@/userinfo/page";
+import UserCard from "../userinfo";
 
 const Login = () => {
   // nextAuth에서 세션 가져오기 useSession 훅으로

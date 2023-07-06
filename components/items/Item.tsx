@@ -5,14 +5,14 @@ import Link from "next/link";
 
 
 interface ItemProps {
-  id: string;
   name: string;
-  imageurl: string;
-  price: number;
-  category: string;
-  stock: number;
+  id: string;
   description: string;
-  createdAt: Date;
+  price: number ;
+  category: string;
+  imageurl: string;
+  stock: number;
+  createdAt: Date | string;
 }
 
 
@@ -21,11 +21,11 @@ function Item(props:ItemProps) {
     <li className={classes.item}>
       <Card>
         <div className={classes.image}>
-          <Image src={props.imageurl} alt={props.name} />
+          <Image src={props.imageurl} alt={props.name} width={300} height={200} />
         </div>
         <div className={classes.content}>
           <h3>{props.name}</h3>
-          <p>{props.price}</p>
+          {/* <p>{props.price}</p> */}
           <p>{props.description}</p>
         </div>
         <div className={classes.actions}>

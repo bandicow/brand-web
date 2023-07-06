@@ -18,12 +18,12 @@ export const authOptions: NextAuthOptions = {
     //   clientSecret: process.env.NAVER_CLIENT_SECRET
     // })
   ],
-  callbacks: {
-    async jwt({ token }) {
-      token.userRole = "admin";
-      return token;
-    },
-  },
+  // callbacks: {
+  //   async jwt({ token }) {
+  //     token.userRole = "admin";
+  //     return token;
+  //   },
+  // },
 };
 
 export default NextAuth(authOptions);

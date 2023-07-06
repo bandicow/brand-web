@@ -1,8 +1,9 @@
-import ItemDetail from "../components/meetups/ItemDetail";
+import ItemDetail from "../../../components/items/ItemDetail";
 import { MongoClient, ObjectId } from "mongodb";
 import Head from "next/head";
 import { Fragment } from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
+
 
 
 interface ItemData {
